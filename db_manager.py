@@ -22,7 +22,7 @@ class DBManager:
         print(f"{self.db.name}: çalıştırıldı")
 
 
-p = PostgresDB("postgres", "sql")
+postgres = PostgresDB("postgres", "sql")
 mongo = MongoDB("mongo", "nosql")
 db_manager = DBManager(mongo)
 db_manager.run()
